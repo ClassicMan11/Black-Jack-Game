@@ -33,7 +33,7 @@ h1{
     text-align: center;
     font-family: 'Tilt Prism', cursive;
 }
-span{
+#underline{
     position: absolute;
     top: 10.5em;
     width: 400px;
@@ -47,7 +47,7 @@ span{
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 1.6em;
+    bottom: 1em;
     width: 400px;
     height: 400px;
 }
@@ -63,7 +63,7 @@ span{
     text-align: center;
     color: white;
 }
-#start{
+#start-game{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,8 +76,9 @@ span{
     color: goldenrod;
     background-color: darkgreen;
     cursor: pointer;
+    user-select: none;
 }
-#new{
+#new-card{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,10 +91,31 @@ span{
     color: goldenrod;
     background-color: darkgreen;
     cursor: pointer;
+    user-select: none;
+    display: none;
 }
 .container-2 #player-el{
+    display: flex;
+    align-items:center;
+    padding: 10px;
+    flex-direction: row;
+    min-width: 180px;
+    height: 40px;
     margin-top: 30px;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-family: 'Signika Negative', sans-serif;
+}
+.container-2 #player-el #player-chips{
+    margin-left: 5px;
+    max-width: 40px;
+    max-height: 40px;
+    overflow: hidden;
+}
+.container-2 #player-el #player-name{
+    margin-right: -5px;
+    padding-right: 10px;
+    max-width: 140px;
+    max-height: 40px;
+    overflow: hidden;
 }

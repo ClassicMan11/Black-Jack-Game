@@ -5,33 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css" integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" async defer></script>
     <title>Black Jack Game</title>
 </head>
 <body>
     
-    <div id="container">
+    <div id="container" class="container">
 
         <h1>BLACK - JACK <br> GAME</h1>
-        <span></span>
+        <span id="underline"></span>
 
         <div class="container-2">
             <h2 id="message">Want to play a round?</h2>
             <p id="cards">Cards: </p>
             <p id="sum">Sum: </p>
 
-            <div id="start">
+            <div id="start-game" onclick="startGame()">
                 <p>Start Game</p>
             </div>
 
-            <div id="new">
+            <div id="new-card" onclick="newCard()">
                 <p>New Card</p>
             </div>
-            <p id="player-el">100</p>
+            <div id="player-el">
+                <span id="player-name"></span>: $
+                <span id="player-chips"></span>
+            </div>
         </div>
 
     </div>
-
-    <script src="script.js" async defer></script>
 
 </body>
 </html>
