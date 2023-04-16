@@ -119,3 +119,10 @@ h1{
     max-height: 40px;
     overflow: hidden;
 }
+a{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 0.8em;
+    text-decoration: overline;
+}
